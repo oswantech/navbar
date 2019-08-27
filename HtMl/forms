@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Time Management Tool</title>
+    </head>
+    
+    <body>
+	<form>
+	<input type="text" name="username"/><br/>
+	<input type="password" name="password"/>
+	</form>
+</body>
+</html>

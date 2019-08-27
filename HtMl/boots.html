@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> CDN </title>
+        <link href="https://fonts.googleapis.com/css?family=Macondo|Permanent+Marker|Lobster" rel="stylesheet">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <!-- Font Awesome -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <body>
+        <!-- Side Nav -->
+        <div id="sideNav" class="tab">
+            <a class="tablinks" onclick="openTab(event,'b3c')" id="boo3"> Bootstrap 3 </a>
+            <a class="tablinks" onclick="openTab(event,'b4c')" id="boo4"> Bootstrap 4 </a>
+            <a class="tablinks" onclick="openTab(event,'fac')" id="fa"> Font Awesome </a>
+            <a class="tablinks" onclick="openTab(event,'jqc')" id="jq"> JQuery </a>
+            <a class="tablinks" onclick="openTab(event,'angc')" id="ang"> Angular JS</a>
+            <a class="tablinks" onclick="openTab(event,'misc')" id="mis"> Miscellaneous </a>
+            <a class="tablinks" onclick="openTab(event,'home')" id="hm"> Contact </a>
+        </div>
+        <div id="snackbar"> Copied to Clipboard </div>
+        
+        <!-- Tab Content -->
+        <!-- Bootstrap 3 -->
+        <div class="tabcontent" id="b3c">
+           <h>Bootstrap 3</h><hr />Bootstrap is a free and open-source front-end library for designing websites and web applications. Beautify your output.<br /><br /><i>CSS</i><br />
+           
+           <div class="code" id="b3cs">&lt;link rel="stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"></div><br />
+           <button onclick="copy('#b3cs')" class="btn ripple"><span class="fa fa-copy"></span></button><br /><br />
+               
+           <i>JQuery</i>
+           <div class="code" id="b3jq">&lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">&lt;/script></div><br />
+           <button onclick="copy('#b3jq')" class="btn ripple"><span class="fa fa-copy"></span></button><br /><br />
+               
+           <i>JS</i>
+           <div class="code" id="b3js">&lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">&lt;/script></div><br />
+           <button onclick="copy('#b3js')" class="btn ripple"><span class="fa fa-copy"></span></button>
+        </div>
+        
+        <!-- Bootstrap 4 -->
+        <div class="tabcontent" id="b4c">
+            <h>Bootstrap 4</h><hr />Bootstrap 4 is the newest version of Bootstrap, which is the most popular HTML, CSS, and JavaScript framework for developing responsive, mobile-first websites. Bootstrap 4 is completely free to download and use!<br /><br />
+                
+            <i>CSS</i><br />
+            <div class="code" id="b4cs"> &lt;link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css"></div><br />
+        <button onclick="copy('#b4cs')" class="btn ripple"> <span class="fa fa-copy"></span> </button><br /><br />
+            
+        <i>JQuery</i><br />
+        <div class="code" id="b4jq"> &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">&lt;/script></div><br />
+        <button onclick="copy('b4jq')" class="btn ripple"><span class="fa fa-copy"></span></button><br /><br />
+            
+        <i>Popper JS</i><br />
+        <div class="code" id="b4pj"> &lt;script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js">&lt;/script></div><br />
+        <button onclick="copy('b4pj')" class="btn ripple"><span class="fa fa-copy"></span></button><br /><br />
+            
+        <i>JS</i><br />
+        <div class="code" id="b4js"> &lt;script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js">&lt;/script></div><br />
+        <button onclick="copy('b4js')" class="btn ripple"><span class="fa fa-copy"></span></button>
+        </div>
+        
+        <!-- Font Awesome -->
+        <div class="tabcontent" id="fac">
+            <h>Font Awesome</h><hr />Font Awesome is a font and icon toolkit based on CSS and LESS. It was made by Dave Gandy for use with Twitter Bootstrap, and later was incorporated into the Bootstrap CDN. Font Awesome has a 20% market share among those websites which use third-party Font Scripts on their platform, ranking it second place after Google Fonts<br /><br />
+                
+            <i>Font Awesome CDN</i><br />
+            <div class="code" id="facdn"> &lt;link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"></div><br />
+            <button onclick="copy('#facdn')" class="btn ripple"><span class="fa fa-copy"></span></button>
+        </div>
+        
+        <!-- JQuery -->
+        <div class="tabcontent" id="jqc">
+            <h>JQuery</h><hr />JQuery's architecture allows developers to create plug-in code to extend its function. There are thousands of jQuery plug-ins available on the Web that cover a range of functions, such as Ajax helpers, Web services, datagrids, dynamic lists, XML and XSLT tools, drag and drop, events, cookie handling, and modal windows.<br /><br />Both Google and Microsoft host jQuery.<br />To use jQuery from Google or Microsoft, use one of the following:<br /><br />
+                
+            <i>Google CDN</i><br />
+            <div class="code" id="jqg"> &lt;script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">&lt;/script></div><br />
+            <button onclick="copy('#jqg')" class="btn ripple"><span class="fa fa-copy"></span></button><br /><br />
+                
+            <i>Microsoft CDN</i><br />
+            <div class="code" id="jqm"> &lt;script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js">&lt;/script></div><br />
+            <button onclick="copy('#jqm')" class="btn ripple"><span class="fa fa-copy"></span></button>
+        </div>
+        <!-- Angular JS -->
+        <div class="tabcontent" id="angc">
+        <h>Angular JS</h><hr />AngularJS extends HTML with new attributes.AngularJS is perfect for Single Page Applications. (SPAs).<br />AngularJS is easy to learn.<br /><br />
+            <i>Angular JS CDN</i><br />
+            <div class="code" id="angcd"> &lt;script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js">&lt;/script></div><br />
+            <button onclick="copy('#angcd')" class="btn ripple"><span class="fa fa-copy"></span></button>
+        </div>
+        <!-- Misc -->
+        <div class="tabcontent" id="misc">
+        <h>Scroll Reveal Effect</h><hr /> Add and beautify the animations when the user scrolls the output <br /><br />
+            <i>Scroll Reveal CDN</i><br />
+            <div class="code" id="mic1"> &lt;script src="https://unpkg.com/scrollreveal/dist/scrollreveal.min.js">&lt;/script></div><br />
+            <button onclick="copy('#mic1')" class="btn ripple"><span class="fa fa-copy"></span></button>
+        </div>
+        <!-- Home -->
+        <div class="tabcontent" id="home">
+            <div class="card ripples">
+            <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcSK_f6RCrLeoPOSVnGTNlY0FqFIrePO2i9ECh7JQ0fW6Tw_u-6fq6obqffW0g" />
+            <div class="container">
+                <h4><a href="https://www.sololearn.com/Profile/8106689/?ref=app">Akshat Vira</a></h4>
+                <p>Learner & Dreamer</p>
+            </div>
+            </div><br />
+            <div class="card ripples">
+            <img src="https://encrypted-tbn3.gstatic.com/images?q=tbn:ANd9GcSvBHNE1WM58nSumsb-_J7naL9gIujW4tFuPgWg9jIvPatFl-rR0w" />
+            <div class="container">
+                <h4><a href="https://www.sololearn.com">Sololearn</a></h4>
+                <p>Mentor</p>
+            </div>
+            </div><br />
+            <div class="card ripples">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0CyY0V7XqUcYqvi7BM0BmzNksc62vcXG5UiZ0CLTqcKzCcpXn5aPNdZO72g" />
+            <div class="container">
+                <h4>Internet</h4>
+                <p>Always there for help</p>
+            </div>
+            </div>
+        </div>
+       <!-- <div class="tabcontent" id="new">
+            Content
+        </div> -->
+    </body>
+</html>
